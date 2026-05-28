@@ -68,7 +68,7 @@ class PemesananForm
                     ->placeholder('Otomatis (contoh: 0407.19042026.0001)')
                     ->maxLength(255),
                     
-                // --- INI FITUR MAGIC AUTO-FILL NYA ---
+                
                 \Filament\Forms\Components\Select::make('cari_pelanggan')
                     ->label('🔍 Cari Pelanggan Lama (Opsional)')
                     ->options(\App\Models\Pelanggan::pluck('nama', 'id'))
@@ -86,7 +86,7 @@ class PemesananForm
                             }
                         }
                     }),
-                // -------------------------------------
+                
 
                 TextInput::make('nama_pelanggan')->required(),
                 TextInput::make('nomor_whatsapp')->required(),
